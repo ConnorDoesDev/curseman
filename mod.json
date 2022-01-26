@@ -1,0 +1,21 @@
+{
+  "Name": "Curseman",
+  "Description": "Wingman, but a bit different.",
+  "LoadPriority": 2,
+  "RequiredOnClient": true,
+  "Version": "0.1",
+
+  "Scripts": [
+    {
+      "Path": "vm_weapon_curseman.nut",
+      "RunOn": "(SERVER|| CLIENT) && MP",
+      "ClientCallback": {
+        "After": "CursemanPrecache"
+      },
+
+      "ServerCallback": {
+        "After": "CursemanPrecache"
+      }
+    }
+  ]
+}
